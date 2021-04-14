@@ -1,0 +1,140 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('../img/pexels-gratisography-2255.jpg');
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+header h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 4em;
+    
+
+}
+
+header button {
+    border: 1px  rgb(230, 226, 226);
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background:rgba(109, 108, 108, 0.1);
+    color:rgb(126, 125, 125);
+}
+
+main {
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    margin-top: 2.5rem;
+}
+
+#cards {
+    background-color: #fff;
+    max-width: 1200px; /*to prevent growing-shrinking*/
+    margin: auto;
+    display: flex;
+    flex-direction: ;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+
+#cards img {
+    width:66px;
+   }
+
+#cards h3 {
+       font-size: 1.2rem;
+      color: rgb(112, 111, 111);
+       text-transform: uppercase;
+       font-weight: 400;
+
+   }
+
+#cards p {
+    line-height: 1.8rem;
+    color:;
+}
+   
+#cards section {
+    padding: 4em;
+}
+
+#cards section:nth-of-type(2) {
+    border-left: 5px solid #f6f9fc;
+}
+
+section a {
+    text-decoration: none;
+    color:#333;
+    font-weight: 400;
+}
+
+section a:hover {
+    text-decoration: none;
+    color:rgb(112, 112, 112);
+}
+
+footer {
+    text-align: center;
+    padding:1.7rem;
+    background: rgb(112, 111, 111);
+    color: #fff;
+}
+
+
+@media screen and (max-width:700px) {
+    header {
+        height: 50vh;
+    }
+
+    header h1 {
+        font-size:3em;
+        text-align: center;
+    }
+
+   main h2 {
+        font-size: 1.2em;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    header {
+        height: 50vh;
+    }
+
+    header h1 {
+        font-size:2em;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #cards section:nth-of-type(2) {
+        border-top: 8px solid #f6f9fc;
+    }
+    border-left: none;
+}
